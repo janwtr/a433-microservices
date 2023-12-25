@@ -1,0 +1,4 @@
+Link GitHub repository pribadi hasil forking: https://github.com/janwtr/a433-microservices
+GitHub Packages: ghcr.io/janwtr/a433-microservices/item-app:v1
+atau: https://github.com/janwtr/a433-microservices/pkgs/container/a433-microservices%2Fitem-app
+

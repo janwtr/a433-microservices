@@ -1,0 +1,86 @@
+Log Membuat Script untuk Build dan Push Docker Image:
+
+jan@SILVER-PC:~/MicroServProj/a433-microservices$ ./build_push_image.sh
+[+] Building 2.2s (9/9) FINISHED                                                                                             docker:default
+ => [internal] load build definition from Dockerfile                                                                                   0.0s
+ => => transferring dockerfile: 734B                                                                                                   0.0s
+ => [internal] load .dockerignore                                                                                                      0.0s
+ => => transferring context: 88B                                                                                                       0.0s
+ => [internal] load metadata for docker.io/library/node:14                                                                             2.0s
+ => [1/4] FROM docker.io/library/node:14@sha256:a158d3b9b4e3fa813fa6c8c590b8f0a860e015ad4e59bbce5744d2f6fd8461aa                       0.0s
+ => [internal] load build context                                                                                                      0.0s
+ => => transferring context: 2.90kB                                                                                                    0.0s
+ => CACHED [2/4] WORKDIR /app                                                                                                          0.0s
+ => CACHED [3/4] COPY . .                                                                                                              0.0s
+ => CACHED [4/4] RUN npm install --production --unsafe-perm && npm run build                                                           0.0s
+ => exporting to image                                                                                                                 0.0s
+ => => exporting layers                                                                                                                0.0s
+ => => writing image sha256:e15cd9288347577c743fc0a186abcea7b731da7378ce4557a249bfcfdf043318                                           0.0s
+ => => naming to docker.io/library/item-app:v1                                                                                         0.0s
+
+What's Next?
+  View a summary of image vulnerabilities and recommendations → docker scout quickview
+REPOSITORY                         TAG                                        IMAGE ID       CREATED          SIZE
+item-app                           v1                                         e15cd9288347   16 minutes ago   949MB
+ubuntu                             latest                                     174c8c134b2a   12 days ago      77.9MB
+postgres                           15-alpine                                  2b35f9941b94   6 weeks ago      242MB
+myjenkins-blueocean                2.414.3                                    07b2473897cb   7 weeks ago      931MB
+myjenkins-blueocean                lts                                        d3fc08b536cf   7 weeks ago      779MB
+grafana/grafana                    latest                                     2fbe6143d3ba   2 months ago     399MB
+prom/prometheus                    latest                                     22010d1e5539   2 months ago     245MB
+nginx-reverse-proxy                latest                                     0c821df8bc51   2 months ago     187MB
+<none>                             <none>                                     2f037c5cff97   2 months ago     187MB
+<none>                             <none>                                     68bf5917e3a9   2 months ago     187MB
+<none>                             <none>                                     efd4bc0b1f55   2 months ago     187MB
+<none>                             <none>                                     1d25194739c9   2 months ago     187MB
+<none>                             <none>                                     a16f305c9c82   2 months ago     187MB
+<none>                             <none>                                     63fce1598c18   2 months ago     187MB
+<none>                             <none>                                     aeedc3192141   2 months ago     187MB
+<none>                             <none>                                     f0faa7e17ac7   2 months ago     187MB
+myjenkins-blueocean                2.346.1-1                                  28a52821718e   2 months ago     794MB
+nginx                              latest                                     61395b4c586d   3 months ago     187MB
+<none>                             <none>                                     add81aae5421   3 months ago     187MB
+overhangio/openedx-permissions     16.1.1                                     672f71e770cc   3 months ago     5.61MB
+overhangio/openedx                 16.1.1                                     b0941d9e3328   3 months ago     2.97GB
+overhangio/openedx-mfe             16.1.1                                     215cfaf0c699   3 months ago     200MB
+sphinxdoc/sphinx-latexpdf          latest                                     7b809423e742   4 months ago     2.89GB
+sphinxdoc/sphinx                   latest                                     804a71861c14   4 months ago     371MB
+ghcr.io/requarks/wiki              2                                          58e34147fec5   4 months ago     552MB
+jan/my-mkdocs                      latest                                     eed59884ff91   5 months ago     1.04GB
+<none>                             <none>                                     712e6652f655   5 months ago     1.04GB
+mysql                              8.1.0                                      ae2502152260   5 months ago     574MB
+lscr.io/linuxserver/mariadb        latest                                     fa08022fe026   5 months ago     304MB
+ghcr.io/linuxserver/bookstack      v23.06.2-ls94                              79b8f282a5be   5 months ago     363MB
+lscr.io/linuxserver/bookstack      latest                                     79b8f282a5be   5 months ago     363MB
+<none>                             <none>                                     528ec079372d   5 months ago     792MB
+ghcr.io/gramps-project/grampsweb   latest                                     a8c42c5e89b7   5 months ago     2.11GB
+bitnami/moodle                     latest                                     e845b4534def   5 months ago     641MB
+docker                             dind                                       cf0970755b29   5 months ago     335MB
+mongo                              4.4.22                                     cb026d11ad72   5 months ago     432MB
+redis                              7.0.11                                     4695a05c473a   5 months ago     130MB
+caddy                              2.6.4                                      050db1833a9c   6 months ago     46MB
+moodlehq/moodleapp                 latest                                     8e35f7826c2f   6 months ago     75.1MB
+docker/welcome-to-docker           latest                                     b1eb53af308a   8 months ago     13.6MB
+gcr.io/k8s-minikube/kicbase        v0.0.39                                    67a4b1138d2d   8 months ago     1.05GB
+elasticsearch                      7.17.9                                     7e1effda4391   10 months ago    620MB
+devture/exim-relay                 4.96-r1-0                                  ff3cb869215e   12 months ago    9.92MB
+docker/desktop-git-helper          c1e302e18fba86bb07f6b657155011bd6791dfc5   352f04e41a19   14 months ago    45.8MB
+docker/dev-environments-default    stable-1                                   7eb85f44c229   15 months ago    610MB
+someguy123/net-tools               latest                                     a76613d32693   18 months ago    334MB
+crazymax/linguist                  7.20.0                                     dc5f9ae3be6a   19 months ago    72.2MB
+docker/desktop-git-helper          5a4fca126aadcd3f6cc3a011aa991de982ae7000   efe2d67c403b   2 years ago      44.2MB
+Login Succeeded
+The push refers to repository [ghcr.io/janwtr/a433-microservices/item-app]
+3bbda0ccaef7: Layer already exists
+f88a33c98cc8: Layer already exists
+80d78eee67a6: Layer already exists
+0d5f5a015e5d: Layer already exists
+3c777d951de2: Layer already exists
+f8a91dd5fc84: Layer already exists
+cb81227abde5: Layer already exists
+e01a454893a9: Layer already exists
+c45660adde37: Layer already exists
+fe0fb3ab4a0f: Layer already exists
+f1186e5061f2: Layer already exists
+b2dba7477754: Layer already exists
+v1: digest: sha256:ebd457aca76e3e1491c4923eaf0e6e4e280d8f390eaf94e0d8f6d35448d1efbf size: 2844
